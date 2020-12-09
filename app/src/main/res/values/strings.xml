@@ -15,4 +15,10 @@
     <string name="overview">Overview</string>
     <string name="popularity">Popularity</string>
     <string name="share">Share</string>
+    <string name="postertopbar">posterTopBar</string>
+    <string name="foregroundpostertopbar">foregroundPosterTopBar</string>
+    <string name="backbutton">BackButton</string>
+    <string name="subPoster">subPoster</string>
+    <string name="icon">icon</string>
+    <string name="poster">poster</string>
 </resources>

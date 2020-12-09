@@ -34,14 +34,14 @@
                         android:id="@+id/posterTopBar"
                         android:layout_width="match_parent"
                         android:layout_height="350dp"
-                        android:contentDescription="@string/todo"
+                        android:contentDescription="@string/postertopbar"
                         android:scaleType="centerCrop"
                         android:src="@drawable/poster_crimes" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/todo"
+                        android:contentDescription="@string/foregroundpostertopbar"
                         android:src="@drawable/card_detail_foreground" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -97,7 +97,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="16dp"
                             android:background="@drawable/ic_back"
-                            android:contentDescription="@string/todo"
+                            android:contentDescription="@string/backbutton"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -116,7 +116,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/subPoster"
                 android:layout_width="120dp"
@@ -125,6 +124,7 @@
                 android:adjustViewBounds="true"
                 android:elevation="10dp"
                 android:src="@drawable/poster_crimes"
+                android:contentDescription="@string/subPoster"
                 app:layout_constraintBottom_toBottomOf="@+id/topBarCardView"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/topBarCardView"
