@@ -31,7 +31,7 @@ class RemoteDataSource {
                 call: Call<MoviesResponse>,
                 response: Response<MoviesResponse>
             ) {
-                callback.onAllMoviesReceived(response.body()!!.results)
+                callback.onAllMoviesReceived(response.body()?.results)
                 EspressoIdlingResource.decrement()
             }
 
@@ -49,7 +49,7 @@ class RemoteDataSource {
                 call: Call<TvShowsResponse>,
                 response: Response<TvShowsResponse>
             ) {
-                callback.onAllTvShowsReceived(response.body()!!.results)
+                callback.onAllTvShowsReceived(response.body()?.results)
                 EspressoIdlingResource.decrement()
             }
 
@@ -61,10 +61,10 @@ class RemoteDataSource {
     }
 
     interface LoadMoviesCallback {
-        fun onAllMoviesReceived(movieResponses: List<Movie>)
+        fun onAllMoviesReceived(movieResponses: List<Movie>?)
     }
 
     interface LoadTvShowsCallback {
-        fun onAllTvShowsReceived(tvShowResponses: List<TvShow>)
+        fun onAllTvShowsReceived(tvShowResponses: List<TvShow>?)
     }
 }
