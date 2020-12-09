@@ -12,13 +12,14 @@ import com.extcode.project.movieappjetpacksubmission2.viewmodel.ViewModelFactory
 
 class TvShowsFragment : Fragment() {
 
-    private lateinit var fragmentTvShowsBinding: FragmentTvShowsBinding
+    private var _fragmentTvShowsBinding: FragmentTvShowsBinding? = null
+    private val fragmentTvShowsBinding get() = _fragmentTvShowsBinding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        fragmentTvShowsBinding = FragmentTvShowsBinding.inflate(layoutInflater, container, false)
+        _fragmentTvShowsBinding = FragmentTvShowsBinding.inflate(layoutInflater, container, false)
         return fragmentTvShowsBinding.root
     }
 
@@ -44,6 +45,11 @@ class TvShowsFragment : Fragment() {
                 adapter = tvShowsAdapter
             }
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _fragmentTvShowsBinding = null
     }
 
 }
