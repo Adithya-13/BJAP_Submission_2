@@ -14,7 +14,7 @@ import com.extcode.project.movieappjetpacksubmission2.viewmodel.ViewModelFactory
 
 class MoviesFragment : Fragment() {
 
-    private var _fragmentMoviesBinding : FragmentMoviesBinding? = null
+    private var _fragmentMoviesBinding: FragmentMoviesBinding? = null
     private val fragmentMoviesBinding get() = _fragmentMoviesBinding!!
 
     override fun onCreateView(

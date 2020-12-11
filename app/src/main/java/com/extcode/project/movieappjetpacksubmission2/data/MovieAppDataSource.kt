@@ -8,10 +8,10 @@ interface MovieAppDataSource {
 
     fun getAllMovies(): LiveData<List<MovieEntity>>
 
-    fun getMovieById(movieId : String): LiveData<MovieEntity>
+    fun getMovieById(movieId: String): LiveData<MovieEntity>
 
     fun getAllTvShows(): LiveData<List<TvShowEntity>>
 
-    fun getTvShowById(tvShowId : String): LiveData<TvShowEntity>
+    fun getTvShowById(tvShowId: String): LiveData<TvShowEntity>
 
 }

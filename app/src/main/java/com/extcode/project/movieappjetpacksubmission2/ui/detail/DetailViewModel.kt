@@ -15,7 +15,7 @@ class DetailViewModel(private val movieAppRepository: MovieAppRepository) : View
         this.movieId = movieId
     }
 
-    fun selectedTvShowId(tvShowId: String){
+    fun selectedTvShowId(tvShowId: String) {
         this.tvShowId = tvShowId
     }
 
